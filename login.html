@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <!-- Barra de menú -->
+    <header>
+        <nav class="navbar">
+            <a href="Catalogo.html" class="logo">MotoShop</a>
+            <ul class="nav-links">
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#" class="btn-inicio">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Login -->
+    <main class="login">
+        <form>
+            <img src="imagenes/avatar.png" alt="user-img">
+            <div class="social-networks">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-tiktok"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+            </div>
+            <label for="username">Correo de usuario</label>
+            <input type="text" id="username" placeholder="Nombre Usuario" required>
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <div class="box-visible">
+                <input type="checkbox" id="visible">
+                <label for="visible">Mostrar Contraseña</label>
+            </div>
+            <button type="submit" id="submit">Iniciar Sesión</button>
+            <a href="registrar.html">Registro</a>
+        </form>
+    </main>
+   
+    <script src="login.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
